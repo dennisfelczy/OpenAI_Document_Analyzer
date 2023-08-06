@@ -1,7 +1,7 @@
 # OpenAI Document Analyzer
 ![Preview Screenshot](preview.png)
 ## Introduction
-This demo application was built to show how Azure AI Document Intelligence and Azure Open AI Service can be used to increase the efficiency of document analysis.
+This demo application was built to show how Azure AI Document Intelligence and Azure OpenAI Service can be used to increase the efficiency of document analysis.
 
 You can create a new project and upload your pdf-documents to it. The documents will be analyzed with Azure AI Document Intelligence and the results will be stored in the project folder.
 
