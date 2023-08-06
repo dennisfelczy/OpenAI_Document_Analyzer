@@ -41,25 +41,25 @@ https://conda.io/en/latest/miniconda.html
 In your explorer navigate to the analyzer directory and rightclick
 select open with conda prompt and in the prompt enter:
 
-'conda create --name document_analyzer python=3.11' 
+        conda create --name document_analyzer python=3.11
 
 ### Install the required packages:
 In your explorer navigate to the analyzer directory and rightclick and open a command prompt terminal
 
-'conda activate document_analyzer' 
+        conda activate document_analyzer
 
 Install the required packages with the following command:
 
-'pip install -r requirements.txt' 
+        pip install -r requirements.txt
 
 ## Running the application:
 In your explorer navigate to the analyzer directory and rightclick and open a command prompt terminal
 
-'conda activate document_analyzer' 
+        conda activate document_analyzer
 
 Run the application with the following command:
 
-'streamlit run document_analyzer.py' 
+        streamlit run document_analyzer.py
 
 The application will open in a webrowser window at http://localhost:8501/
 
