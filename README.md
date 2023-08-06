@@ -1,7 +1,7 @@
 # OpenAI Document Analyzer
 ![Preview Screenshot](preview.png)
 ## Introduction
-This demo application was built to show how Azure AI Document Intelligence and Azure Open AI Service can be used to increase the efficiency of document analysis.
+This demo application was built to show how Azure AI Document Intelligence and Azure OpenAI Service can be used to increase the efficiency of document analysis.
 
 You can create a new project and upload your pdf-documents to it. The documents will be analyzed with Azure AI Document Intelligence and the results will be stored in the project folder.
 
@@ -9,9 +9,9 @@ A FAISS Vector Search Index will be created for the documents and you can use si
 
 Tables and Key Value pairs that are found in the documents will be extracted and can also be viewed with the click of a button.
 
-The reduced version of the content (a markdown version of all pages where similarity search found relevant content) can be used as context to ask questions about the documents with Azure Open AI ("gpt-35-turbo" or "text-davinci-003")
+The reduced version of the content (a markdown version of all pages where similarity search found relevant content) can be used as context to ask questions about the documents with Azure OpenAI ("gpt-35-turbo" or "text-davinci-003")
 
-The application also provides Speech to text and Text to Speech functionality to make it easier to increase its accessibility (currently English and German)
+The application also provides Speech to text and Text to Speech functionality to increase accessibility (currently English and German)
 
 Questions and Queries are stored in the topics subfolder of the project, so that you can easily reuse them i.e. for quantative prompt testing with prompt flow.
 
@@ -26,7 +26,7 @@ However this is a great way to demonstrate the impact of proper prompts and k va
 ## Prerequisites:
 - Azure Subscription with the following resources:
   - Azure AI Document Intelligence
-  - Azure Open AI
+  - Azure OpenAI
   - Azure AI Speech
 
 create a .env file and add the corresponding keys and endpoint information to file (see .env.example for an example)
@@ -40,19 +40,27 @@ https://conda.io/en/latest/miniconda.html
 
 In your explorer navigate to the analyzer directory and rightclick
 select open with conda prompt and in the prompt enter:
-conda create --name document_analyzer python=3.11
+
+'conda create --name document_analyzer python=3.11' 
 
 ### Install the required packages:
 In your explorer navigate to the analyzer directory and rightclick and open a command prompt terminal
-conda activate document_analyzer
+
+'conda activate document_analyzer' 
+
 Install the required packages with the following command:
-pip install -r requirements.txt
+
+'pip install -r requirements.txt' 
 
 ## Running the application:
 In your explorer navigate to the analyzer directory and rightclick and open a command prompt terminal
-conda activate document_analyzer
+
+'conda activate document_analyzer' 
+
 Run the application with the following command:
-streamlit run document_analyzer.py
+
+'streamlit run document_analyzer.py' 
+
 The application will open in a webrowser window at http://localhost:8501/
 
 ## Setup:
@@ -96,6 +104,6 @@ On the Context Query tab you can enter a query and the application will search f
 ### Question Answering
 The Question Answer tab allows you to ask questions about the context using text-davinci-003 or gpt-3-turbo from Azure Open AI
 
-##Support
+## Support
 The application is provided as is without any support.
 Feel free to use it as a starting point for your own application.
