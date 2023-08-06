@@ -1,0 +1,9 @@
+openai
+langchain
+streamlit
+tiktoken
+faiss-cpu
+python-dotenv
+azure.cognitiveservices.speech
+azure-ai-formrecognizer==3.3.0b1
+ftfy
