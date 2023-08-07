@@ -15,13 +15,13 @@ The application also provides Speech to text and Text to Speech functionality to
 
 Questions and Queries are stored in the topics subfolder of the project, so that you can easily reuse them i.e. for quantitative prompt testing with prompt flow.
 
-For a good demonstration I would suggest you import a set of documents and include information (topics) that you try to find in the documents and the pages that humans would normally look at to gather the information.
+For a good demonstration I suggest you import a set of documents and include information (topics) that you try to find in the documents and the pages that humans would normally look at to gather the information.
 
 These pages can be used to set the ground truth for the topic. If the ground truth is set, the application will notify you if the pages that were found by the similarity search are part of the ground truth or not.
 
 Based on the k value you can increase the likelyhood to find the relevant pages, but you will also increase the number of pages that are not relevant, so that the efficiency gain will be reduced.
 
-However this is a great way to demonstrate the impact of proper prompts and k values on the results
+However this is a great way to demonstrate the impact of proper prompts and k values on the results.
 
 ## Prerequisites:
 - Azure Subscription with the following resources:
@@ -29,7 +29,7 @@ However this is a great way to demonstrate the impact of proper prompts and k va
   - Azure OpenAI
   - Azure AI Speech
 
-create a .env file and add the corresponding keys and endpoint information to file (see .env.example for an example)
+create a .env file and add the corresponding keys and endpoint information to the file (see .env.example for an example)
 
 ## Installation:
 I suggest to use conda to creata a virtual python environment 
