@@ -13,7 +13,7 @@ The reduced version of the content (a markdown version of all pages where simila
 
 The application also provides Speech to text and Text to Speech functionality to increase accessibility (currently English and German)
 
-Questions and Queries are stored in the topics subfolder of the project, so that you can easily reuse them i.e. for quantative prompt testing with prompt flow.
+Questions and Queries are stored in the topics subfolder of the project, so that you can easily reuse them i.e. for quantitative prompt testing with prompt flow.
 
 For a good demonstration I would suggest you import a set of documents and include information (topics) that you try to find in the documents and the pages that humans would normally look at to gather the information.
 
