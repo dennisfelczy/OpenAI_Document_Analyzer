@@ -32,7 +32,7 @@ However this is a great way to demonstrate the impact of proper prompts and k va
 create a .env file and add the corresponding keys and endpoint information to the file (see .env.example for an example)
 
 ## Installation:
-I suggest to use conda to creata a virtual python environment 
+I suggest to use conda to create a a virtual python environment 
 
 ### Miniconda (example)
 Install Miniconda according to the official documentation. (select add to PATH variable during installation)
