@@ -65,14 +65,14 @@ The application will open in a webrowser window at http://localhost:8501/
 
 ## Setup:
 ### Project
-You start by first creating a new project which will create a new folder in the projects folder
+You start by first creating a new project which will create a new folder in the projects folder.
 If you put a logo.png file inside of the project folder it will be used as the logo in the application. otherwise the default logo (img.png) will be used
 
 ### Documents
-Now can upload your documents to the project
-After that you can start the analysis with Azure AI Document Intelligence
-Depending on the length of the document, the analysis can take several minutes
-When the Analysis is finished you multiple JSON and md files are created inside the files subfolder of your project:
+Now you can upload your documents to the project.
+After that you can start the analysis with Azure AI Document Intelligence.
+Depending on the length of the document, the analysis can take several minutes.
+When the Analysis is finished, multiple JSON and md files are created inside the files subfolder of your project:
 - *.json: contains the raw output of the analysis
 - *.md: contains the full text of the document in markdown format
 - *.pagecontent.json: contains the content of the pages in markdown format with the page number as the json key
@@ -84,25 +84,25 @@ Based on the anaysis results from Document Intelligence the paragraphs are used 
 The paragraphes wit sectionHeading role will be used to decide how to split the text. If the sections are larger than the token limit (default 512) the section will be split into smaller chunks.
 
 ### Topics
-Now you can create topics which will create a new folder in the topics subfolder of your project
+Now you can create topics which will create a new folder in the topics subfolder of your project.
 Inside of the topic folder there are different text files:
-- queries.txt: contains the queries that you want to use for the Vecor Search
+- queries.txt: contains the queries that you want to use for the Vector Search
 - questions.txt: contains the questions that you want to ask about the topic
 - ground_truth.txt: contains the pages that humans would look at to answer the questions  (for ground truth checking)
 
 ## Usage
 ### Sidebar
-on the sidebar you can select the project and the document that you want to analyze
-Now you can create or select a topic
+on the sidebar you can select the project and the document that you want to analyze.
+Now you can create or select a topic.
 
 ### Document Viewer
-On the Document viewer tab you can view the document (Page range or Full), the extracted tables and key values
+On the Document viewer tab you can view the document (Page range or Full), the extracted tables and key values.
 
 ### Context Query
-On the Context Query tab you can enter a query and the application will search for the most relevant pages and display the content of the pages that are most relevant to the query. This is also the context that is used on the Question Answering tab
+On the Context Query tab you can enter a query and the application will search for the most relevant pages and display the content of the pages that are most relevant to the query. This is also the context that is used on the Question Answering tab.
 
 ### Question Answering
-The Question Answer tab allows you to ask questions about the context using text-davinci-003 or gpt-3-turbo from Azure Open AI
+The Question Answering tab allows you to ask questions about the context using text-davinci-003 or gpt-3-turbo from Azure Open AI.
 
 ## Support
 The application is provided as is without any support.
