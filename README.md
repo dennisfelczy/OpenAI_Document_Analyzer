@@ -28,6 +28,11 @@ However this is a great way to demonstrate the impact of proper prompts and k va
   - Azure AI Document Intelligence
   - Azure OpenAI
   - Azure AI Speech
+ 
+In the Azure [OpenAI Studio](https://oai.azure.com/portal) deploy the following models with the exact names:
+- text-davinci-003
+- gpt-35-turbo
+- text-embedding-ada-002
 
 create a .env file and add the corresponding keys and endpoint information to the file (see .env.example for an example)
 
