@@ -29,7 +29,7 @@ However this is a great way to demonstrate the impact of proper prompts and k va
   - Azure OpenAI
   - Azure AI Speech
  
-In the Azure [OpenAI Studio](https://oai.azure.com/portal) deploy the following models with the exact names:
+In the [Azure OpenAI Studio](https://oai.azure.com/portal) deploy the following models with the exact names:
 - text-davinci-003
 - gpt-35-turbo
 - text-embedding-ada-002
