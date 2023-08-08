@@ -33,6 +33,9 @@ In the [Azure OpenAI Studio](https://oai.azure.com/portal) deploy the following 
 - gpt-35-turbo
 - text-embedding-ada-002
 
+You can find general information about Azure OpenAI [here](https://learn.microsoft.com/en-us/training/modules/explore-azure-openai/)
+
+
 create a .env file and add the corresponding keys and endpoint information to the file (see .env.example for an example)
 
 ## Installation:
