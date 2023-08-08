@@ -9,7 +9,7 @@ A FAISS Vector Search Index will be created for the documents and you can use si
 
 Tables and Key Value pairs that are found in the documents will be extracted and can also be viewed with the click of a button.
 
-The reduced version of the content (a markdown version of all pages where similarity search found relevant content) can be used as context to ask questions about the documents with Azure OpenAI ("gpt-35-turbo" or "text-davinci-003")
+The reduced version of the content (a markdown version of all pages where similarity search found relevant content) can be used as context to ask questions about the documents with Azure OpenAI ("gpt-35-turbo")
 
 The application also provides Speech to text and Text to Speech functionality to increase accessibility (currently English and German)
 
@@ -30,7 +30,6 @@ However this is a great way to demonstrate the impact of proper prompts and k va
   - Azure AI Speech
  
 In the [Azure OpenAI Studio](https://oai.azure.com/portal) deploy the following models with the exact names:
-- text-davinci-003
 - gpt-35-turbo
 - text-embedding-ada-002
 
@@ -107,7 +106,7 @@ On the Document viewer tab you can view the document (Page range or Full), the e
 On the Context Query tab you can enter a query and the application will search for the most relevant pages and display the content of the pages that are most relevant to the query. This is also the context that is used on the Question Answering tab.
 
 ### Question Answering
-The Question Answering tab allows you to ask questions about the context using text-davinci-003 or gpt-3-turbo from Azure Open AI.
+The Question Answering tab allows you to ask questions about the context using gpt-3-turbo from Azure Open AI.
 
 ## Support
 The application is provided as is without any support.

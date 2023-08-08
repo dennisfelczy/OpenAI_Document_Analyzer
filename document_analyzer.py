@@ -279,7 +279,7 @@ if(len(st.session_state.topic_list)>0):
             # Select language
             st.session_state.language = st.selectbox('Select language',("en-US", "de-DE"),index=0,label_visibility='collapsed')
         with col82:
-            st.session_state.model = st.selectbox('Model',("gpt-35-turbo","text-davinci-003"),index=0)
+            st.session_state.model = st.selectbox('Model',("gpt-35-turbo"),index=0)
         with col83:    
             # t number input widget
             st.session_state.t = st.number_input('Temperature', min_value=0.0, max_value=1.0, value=0.0)
