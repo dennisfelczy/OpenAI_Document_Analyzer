@@ -25,13 +25,16 @@ However this is a great way to demonstrate the impact of proper prompts and k va
 
 ## Prerequisites:
 - Azure Subscription with the following resources:
-  - Azure AI Document Intelligence
+  - Azure AI Document Intelligence (S0 tier)
   - Azure OpenAI
   - Azure AI Speech
  
-In the [Azure OpenAI Studio](https://oai.azure.com/portal) deploy the following models with the exact names:
+In the [Azure OpenAI Studio](https://oai.azure.com/portal) deploy the following models and make sure the name of the deployment is the same as mentioned below:
 - gpt-35-turbo
 - text-embedding-ada-002
+
+You can find general information about Azure OpenAI [here](https://learn.microsoft.com/en-us/training/modules/explore-azure-openai/)
+
 
 create a .env file and add the corresponding keys and endpoint information to the file (see .env.example for an example)
 
