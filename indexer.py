@@ -69,6 +69,9 @@ def createdocs(jsondata,maxtokensize,sourcename):
     tablesearchkey=-1
     largestdoc=0
     pagecontent={}
+    for i in range(1,len(data['pages'])+1):
+        pagecontent[str(i)]=""
+    
     print("Creating docs for "+sourcename+" with "+str(len(data['paragraphs']))+" paragraphes and "+str(len(data['tables']))+" tables")
     #iterate over all paragraphes and create docs with mdtext seperated by sectionHeadings
     for idx,paragraphes in enumerate(data['paragraphs']):
@@ -265,7 +268,7 @@ def createindex(projectname,jsonfile,sourcename,maxtokensize):
         mdtext=mdtext+"## Table "+str(tabid)+" from page "+str(tab['bounding_regions'][0]['page_number'])+"\n"+tb.tabletomd(tab)+"\n"
 
     keyvalues={}
-    for i in range(1,len(pagecontent)+1):
+    for i in range(1,len(data['pages'])+1):
         keyvalues[str(i)]={}
     #create keyvalues json
     for keyvalue in data['key_value_pairs']:
