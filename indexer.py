@@ -69,6 +69,8 @@ def createdocs(jsondata,maxtokensize,sourcename):
     tablesearchkey=-1
     largestdoc=0
     pagecontent={}
+    mdtext=""
+    pagesources=[]
     for i in range(1,len(data['pages'])+1):
         pagecontent[str(i)]=""
     
