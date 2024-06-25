@@ -1,5 +1,6 @@
 openai==0.28.1
 langchain
+langchain-community
 streamlit
 tiktoken
 faiss-cpu

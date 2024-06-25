@@ -192,7 +192,7 @@ def synthesize_text(text):
 
 def load_embeddings():
     embeddings = OpenAIEmbeddings(deployment="text-embedding-ada-002", chunk_size=16)
-    st.session_state.vs = FAISS.load_local("projects/"+st.session_state.project+"/faiss/"+st.session_state.vector_index_name, embeddings)
+    st.session_state.vs = FAISS.load_local("projects/"+st.session_state.project+"/faiss/"+st.session_state.vector_index_name, embeddings,allow_dangerous_deserialization=True)
     st.session_state.document_name = st.session_state.vector_index_name
     st.success(st.session_state.vector_index_name+' loaded successfully.')
     contentjsonfile="projects/"+st.session_state.project+"/files/"+st.session_state.vector_index_name+".pagecontent.json"
